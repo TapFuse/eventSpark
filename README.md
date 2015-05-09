@@ -12,3 +12,6 @@ Inside project folder run `harp compile ./ ../eventSpark-output` this will creat
 
 #### TEST:
 You can run `harp server` inside the `eventSpark-output` folder to test the site locally.
+
+#### DEPLOY:
+Commit `eventSpark-output` folder contents to `gh-pages` branch of this repository and sync.
