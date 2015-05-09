@@ -1,0 +1,45 @@
+@brand-custom: #45163e;
+// @brand-custom: #5A224F;
+
+header {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.animation-container{
+	width:55%;
+	margin:auto;
+}
+
+@media(min-width: 320px) {
+	.animation-container {
+		width:85%;
+	}
+}
+@media(min-width: 992px) {
+	.animation-container {
+		width:65%;
+	}
+}
+
+.promo {
+	padding-top:30px;
+	padding-bottom: 20px;
+}
+
+.bg-custom {
+	background-color: @brand-custom;
+	.display-1,
+	.display-2,
+	.display-3,
+	.title {
+	color:white;
+}
+}
+
+@media(max-width:462px) {
+	.controls > button {
+		width: 250px;
+		margin-top: 10px;
+	}
+}
