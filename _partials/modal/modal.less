@@ -1,0 +1,37 @@
+
+.Absolute-Center {
+  height: 50%;
+  width: 50%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+    width: 310px;
+    height: 125px;
+    // min-width: 200px;
+    // max-width: 400px;
+    padding: 22px;
+    border-radius: 5px;
+}
+
+.Center-Container { position: relative; }
+
+
+.Absolute-Center.is-Fixed {
+  position: fixed;
+  z-index: 999;
+}
+
+
+.Modal {
+  background-color:@bg-gray;
+  .display-1 {
+    color:@brand-secondary;
+  }
+ box-shadow: 0 0 20px rgba(0,0,0,0.25);
+}
+.Modal-Background { position: fixed; top: 0; left: 0; bottom: 0; right: 0; background: #000; background: fade(#000,85%); z-index: 3; }
+.toggle-Modal { cursor: pointer; }
+.is-Hidden { display: none; }
+
+

@@ -22,6 +22,8 @@ html
   script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
   script(type='text/javascript', src='js/libs.js')
 
+  script.
+    new Vivus('animation', {type: 'delayed', duration: 150} );
 
   script.
     smoothScroll.init({
@@ -45,8 +47,6 @@ html
         $('form').h5Validate();
     });
 
-  script.
-    new Vivus('animation', {type: 'delayed', duration: 150} );
 
 
     //-  clears form on after submiting
@@ -58,10 +58,12 @@ html
     if (frm.checkValidity()) {
         frm.submit(); // Submit
         frm.reset();  // Reset
+    $('#thankYou').removeClass('is-Hidden');
         //- show modal thank you
-        //- window.setTimeout(function() {
-        //-     //- hide modal thank you
-        //-     }, 2000)
+        window.setTimeout(function() {
+            //- hide modal thank you
+        $('#thankYou').addClass('is-Hidden');
+            }, 2000)
     }
     return false; // Prevent page refresh
     };
